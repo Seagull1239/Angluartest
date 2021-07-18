@@ -1,0 +1,26 @@
+<h1 id="tableLabel">Products</h1>
+
+<p>Below is a list of products we have</p>
+
+
+<table class='table table-hover'> 
+  <thead>
+    <tr>
+      <th>Product Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.productId }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.stock }}</td>
+    </tr>
+  </tbody>
+</table>
+ 
+
+
